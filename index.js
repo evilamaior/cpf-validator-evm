@@ -2,6 +2,10 @@ function arrayNumber(cpf) {
     return cpf.split('').map(Number);
 }
 
+function checkEqualDigits(cpf) {
+    return !(cpf === '00000000000' || cpf === '11111111111' || cpf === '22222222222' || cpf === '33333333333' || cpf === '44444444444' || cpf === '55555555555' || cpf === '66666666666' || cpf === '77777777777' || cpf === '88888888888' || cpf === '99999999999')
+}
+
 function multiplyDigits(cpf, mult) {
     return arrayNumber(cpf).map((element, i) => {
         let multiplier = mult - i;
@@ -24,7 +28,7 @@ function calculateSecondDigit(cpf) {
 }
 
 function cpfValidator(cpf) {
-    return (calculateFirstDigit(cpf) === parseInt(cpf[9]) && calculateSecondDigit(cpf) === parseInt(cpf[10]))
+    return (calculateFirstDigit(cpf) === parseInt(cpf[9]) && calculateSecondDigit(cpf) === parseInt(cpf[10]) && checkEqualDigits(cpf))
 }
 console.log(cpfValidator('11111111111'))
 module.exports.cpfValidator = cpfValidator;
