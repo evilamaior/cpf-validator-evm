@@ -5,7 +5,7 @@
 ## Como instalar
 
 Para instalar, digite o comando a seguir no terminal.
-> $  npm cpf-validator-evm
+> $  npm install cpf-validator-evm
 
 ## Como utilizar
 
