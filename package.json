@@ -1,5 +1,5 @@
 {
-  "name": "cpf-validator",
+  "name": "cpf-validator-evm",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/evilamaior/cpf-validator"
+    "url": "https://github.com/evilamaior/cpf-validator-evm"
   },
   "author": "Esthéfanie Vila Maior",
   "license": "ISC",
