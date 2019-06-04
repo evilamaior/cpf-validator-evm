@@ -10,6 +10,8 @@ Para instalar, digite o comando a seguir no terminal.
 ## Como utilizar
 
 Para utilizar a biblioteca, digite o comando a seguir no terminal.
+>node
+>
 > const validator = require('cpf-validator-evm');
 >
 > console.log(validator.cpfValidator('31661732852'))
